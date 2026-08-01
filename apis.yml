@@ -1,7 +1,23 @@
 aid: scorce
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scorce.png
 name: Scorce
-description: Scorce is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Scorce is a Mexico-based API aggregation platform that gives businesses a single
+  integration point to connect to multiple Latin American and global identity APIs for customer
+  authentication, KYC (Know Your Customer), digital identity verification, and fraud prevention.
+  The platform lets teams connect in under 24 hours, obtain provider trials, and monitor API
+  performance across providers from one unified dashboard. Founded in 2019 and headquartered
+  in Puebla, Mexico, Scorce is backed by 500 Global, Finnovista, and Tenity.
 url: https://raw.githubusercontent.com/api-evangelist/scorce/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- KYC
+- Identity Verification
+- Fraud Prevention
+- Authentication
+- API Aggregator
+- Fintech
+- LatAm
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/scorce-domain-security.yml
 - type: Website
   url: https://scorce.io
+- type: StatusPage
+  url: https://status.scorce.io
+- type: LinkedIn
+  url: https://www.linkedin.com/company/scorce/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
